@@ -19,7 +19,8 @@ description = "just as it has always been"
   title = "致亘古不变之物"
   description = "just as it has always been"
 
-
+# config.toml for time
+enableGitInfo = true
 
 
 
