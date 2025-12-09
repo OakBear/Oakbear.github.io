@@ -1,3 +1,55 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://oakbear.github.io/"
+
+theme = "LoveIt"
+
+
+languageCode = "zh-CN"
+languageName = "简体中文"
+hasCJKLanguage = true
+title = "致亘古不变之物"
+description = "just as it has always been"
+
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+
+[params]
+  # 网站在 Open Graph / SEO / 头部显示的标题／描述
+  title = "致亘古不变之物"
+  description = "just as it has always been"
+
+
+
+
+
+
+[menu]
+  [[menu.main]]
+    weight = 1
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+
+  [[menu.main]]
+    weight = 2
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+
+  [[menu.main]]
+    weight = 3
+    identifier = "categories"
+    name = "分类"
+    url = "/categories/"
+
+  [[menu.main]]
+    weight = 4
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+
+
+[params.home.profile]
+title = "999"
+subtitle = "666"
