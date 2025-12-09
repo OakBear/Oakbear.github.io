@@ -51,5 +51,6 @@ description = "just as it has always been"
 
 
 [params.home.profile]
-title = "999"
-subtitle = "666"
+title = "Echo"
+subtitle = "just as it has always been"
+name = "dundme"
