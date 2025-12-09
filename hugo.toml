@@ -6,19 +6,32 @@ theme = "LoveIt"
 languageCode = "zh-CN"
 languageName = "简体中文"
 hasCJKLanguage = true
+
+
+#这是标签页名称
 title = "致亘古不变之物"
-name = "dundme"
-description = "just as it has always been"
+
 
 
 [markup]
   [markup.highlight]
     noClasses = false
 
+
+
+
+#以下五行无效
 [params]
   # 网站在 Open Graph / SEO / 头部显示的标题／描述
-  title = "致亘古不变之物"
-  description = "just as it has always been"
+  title = "致"
+  description = "kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"
+  name = "d"
+
+#这是右上角
+[params.header.title]
+  title = "致"
+  description = "kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"
+  name = "fooled K"
 
 # config.toml for time
 enableGitInfo = true
@@ -50,6 +63,8 @@ enableGitInfo = true
     identifier = "about"
     name = "关于"
     url = "/about/"
+
+
 
 
 [params.home.profile]
