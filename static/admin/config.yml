@@ -2,7 +2,7 @@
 # 1. Backend Settings - Connect to GitHub
 # ------------------------------
 backend:
-  name: github
+  name: git-gateway
   repo: OakBear/Oakbear.github.io # 你的仓库名
   branch: main
   auth_type: implicit
