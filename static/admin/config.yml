@@ -1,39 +1,38 @@
 # ------------------------------
-# 1. 后端设置 (Backend) - 连接到 GitHub
+# 1. Backend Settings - Connect to GitHub
 # ------------------------------
 backend:
   name: github
-  # ❗ 替换为你的 GitHub 用户名和仓库名 (例如: "gemini-ai/gemini-ai.github.io")
   repo: OakBear/Oakbear.github.io
-  branch: main # 你的内容分支，通常是 main
+  branch: main
   base_url: https://api.github.com
-  # ❗ 后面配置的 GitHub OAuth App 的 Client ID
+  # The auth_type 'implicit' is correct for a simple GitHub Pages setup.
   auth_type: implicit
+  # Client ID from your GitHub OAuth App
   app_id: Ov23likcflBsuZYBLGVx
- # 稍后获取
-  auth_url: https://github.com/login/oauth/authorize # 授权链接
+  auth_url: https://github.com/login/oauth/authorize
 
 # ------------------------------
-# 2. 媒体设置 (Media) - 图片上传
+# 2. Media Settings - Image Uploads
 # ------------------------------
-media_folder: "static/uploads"     # CMS 上传的图片存放的实际路径
-public_folder: "/uploads"          # 图片在网站上访问的公共路径
-# 注: 你需要在你的仓库根目录创建 "static/uploads" 文件夹。
+media_folder: "static/uploads"
+public_folder: "/uploads"
+# Note: Ensure you have created the "static/uploads" folder in your repository root.
 
 # ------------------------------
-# 3. 内容集合 (Collections) - 你的 Hugo 文章结构
+# 3. Content Collections - Your Hugo Content Structure
 # ------------------------------
 collections:
   - name: "posts"
-    label: "博客文章"
-    folder: "content/posts"  # ❗ 你的 Markdown 文件实际存放的路径
+    label: "Blog Posts"
+    folder: "content/posts"
     create: true
-    slug: "{{slug}}" # 文件名格式，使用文章标题的 slug
+    slug: "{{slug}}"
     fields:
-      - {label: "标题 (Title)", name: "title", widget: "string", required: true}
-      - {label: "日期 (Date)", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", required: true}
-      - {label: "描述 (Description)", name: "description", widget: "text", required: false}
-      - {label: "草稿 (Draft)", name: "draft", widget: "boolean", default: true}
-      - {label: "标签 (Tags)", name: "tags", widget: "list", required: false}
-      - {label: "分类 (Categories)", name: "categories", widget: "list", required: false}
-      - {label: "正文 (Body)", name: "body", widget: "markdown"}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", required: true}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Categories", name: "categories", widget: "list", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
