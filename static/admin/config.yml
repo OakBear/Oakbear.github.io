@@ -3,11 +3,8 @@
 # ------------------------------
 backend:
   name: git-gateway
-  repo: OakBear/Oakbear.github.io # 你的仓库名
   branch: main
-  auth_type: implicit
-  app_id: Ov23likcflBsuZYBLGVx # 你的 Client ID
-  auth_url: https://github.com/login/oauth/authorize
+
 
 # ------------------------------
 # 2. Media Settings - Image Uploads
