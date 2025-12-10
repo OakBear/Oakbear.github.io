@@ -1,27 +1,15 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <title>内容管理系统 (Decap CMS)</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-</head>
-<body>
-  
-  <div id="cms-root"></div> 
-
-  <script>
-    // 确保你的 CMS 在加载后初始化
-    if (window.CMS) {
-      CMS.init({
-        // 可选：指定挂载点 ID，以确保找到正确的元素
-        config: {
-          config: {
-            // ... 你的 config.yml 中的其他配置会自动加载 ...
-          }
-        }
-      });
-    }
-  </script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Content Manager</title>
+  </head>
+  <body>
+    <!-- Decap CMS 主 JS（使用 CDN） -->
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+      // 页面本身不会做太多事，Decap 会读取 /admin/config.yml 来配置界面
+    </script>
+  </body>
 </html>

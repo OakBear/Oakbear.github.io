@@ -3,13 +3,10 @@
 # ------------------------------
 backend:
   name: github
-  repo: OakBear/Oakbear.github.io
+  repo: OakBear/Oakbear.github.io # 你的仓库名
   branch: main
-  base_url: https://api.github.com
-  # The auth_type 'implicit' is correct for a simple GitHub Pages setup.
   auth_type: implicit
-  # Client ID from your GitHub OAuth App
-  app_id: Ov23likcflBsuZYBLGVx
+  app_id: Ov23likcflBsuZYBLGVx # 你的 Client ID
   auth_url: https://github.com/login/oauth/authorize
 
 # ------------------------------
