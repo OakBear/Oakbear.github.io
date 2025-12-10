@@ -27,11 +27,11 @@ title = "致亘古不变之物"
   description = "kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"
   name = "d"
 
-#这是右上角
+#这是左上角
 [params.header.title]
   title = "致"
   description = "kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"
-  name = "fooled K"
+  name = "K"
 
 # config.toml for time
 enableGitInfo = true
@@ -70,4 +70,4 @@ enableGitInfo = true
 [params.home.profile]
 title = "Echo"
 subtitle = "just as it has always been"
-name = "dundme"
+name = "dundme" #无效
