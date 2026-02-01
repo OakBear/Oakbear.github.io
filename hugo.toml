@@ -63,7 +63,10 @@ enableGitInfo = true
     identifier = "about"
     name = "关于"
     url = "/about/"
-
+  [[menu.main]]
+      name = "Games"
+      url = "/games/"
+      weight = 5
 
 
 
